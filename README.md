@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: The naked twins rule adds additional constraints to the non-twin boxes in each unit. This reduces the search space since we now have fewer possible values for the non-twin boxes.
+A: The naked twins technique locates cells within a unit where only the two same options are left. Since this ensures that those two values must be used there and thus can be removed from the remaining cells in the unit. This reduces the search space since we now have fewer possible values for the non-twin boxes.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: The two diagonal units adds more constrains to the boxes and futhers our possiblites to do elimination, naked twins, and only_choice.
+A: In diagonal sudoku we add two extra units for the diagonals. The extra units add constraints to the system. For the cells in the two diagonals we have extra possibilities to do elimination, naked twins, and only_choice.
 
 ### Install
 
